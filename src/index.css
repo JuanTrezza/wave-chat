@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-wave-bg: #0F0F14;
+  --color-wave-elevated: #1A1A22;
+  --color-wave-card: #21212C;
+  --color-wave-purple: #8B5CF6;
+  --color-wave-pink: #EC4899;
+  --color-wave-green: #10B981;
+  --color-wave-text: #F8FAFC;
 }
 
-/* Hide scrollbars for story reels, headers, and views */
-.scrollbar-none::-webkit-scrollbar {
-  display: none;
+body {
+  background-color: #0F0F14;
+  color: #F8FAFC;
+  font-family: 'Inter', sans-serif;
 }
-.scrollbar-none {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
